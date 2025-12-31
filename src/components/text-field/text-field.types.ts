@@ -1,4 +1,10 @@
-import type { TextInputProps, TextProps, ViewProps } from 'react-native';
+import type {
+  StyleProp,
+  TextInputProps,
+  TextProps,
+  TextStyle,
+  ViewProps,
+} from 'react-native';
 import type {
   AnimatedProps,
   EntryOrExitLayoutType,
@@ -244,6 +250,9 @@ export interface TextFieldInputProps extends TextInputProps {
    * To completely disable animated styles and use your own via className or style prop, set `isAnimatedStyleActive={false}`.
    */
   classNames?: ElementSlots<InputSlots>;
+  styles?: {
+    input?: StyleProp<TextStyle>;
+  };
   /**
    * Animation configuration for input focus/blur and error state transitions
    * - `false` or `"disabled"`: Disable all animations

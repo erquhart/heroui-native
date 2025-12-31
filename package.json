@@ -1,5 +1,5 @@
 {
-  "name": "heroui-native",
+  "name": "@erquhart/heroui-native",
   "version": "1.0.0-beta.10",
   "description": "Beautiful, fast and modern React Native UI library",
   "main": "./lib/module/index.js",

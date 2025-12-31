@@ -138,6 +138,7 @@ const TextFieldInput = forwardRef<TextInputType, TextFieldInputProps>(
       className,
       classNames,
       style,
+      styles,
       animation,
       isAnimatedStyleActive = true,
       onFocus,
@@ -203,7 +204,7 @@ const TextFieldInput = forwardRef<TextInputType, TextFieldInputProps>(
         <TextInput
           ref={ref}
           className={inputStyles}
-          style={[styleSheet.borderCurve]}
+          style={[styleSheet.borderCurve, styles?.input]}
           placeholderTextColor={themeColorFieldPlaceholder}
           selectionColor={themeColorMuted}
           selectionHandleColor={themeColorMuted}
